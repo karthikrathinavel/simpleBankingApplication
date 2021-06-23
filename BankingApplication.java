@@ -1,7 +1,12 @@
 import java.util.Scanner;
 public class BankingApplication{
 	public static void main(String[] args){
-		BankAccount obj1 = new BankAccount("myname","0101accno");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter your name:");
+		String name = input.nextLine();
+		System.out.println("Enter your Account number:");
+		String accno = input.nextLine();
+		BankAccount obj1 = new BankAccount(name,accno);
 		obj1.showMenu();
 	}
 }
